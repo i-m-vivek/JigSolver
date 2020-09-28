@@ -14,7 +14,7 @@ df = pd.DataFrame(columns=["img_name", "1", "2", "3", "4", "5", "6", "7", "8", "
 save_dir_complete = "data/generated_data/"
 
 file_list = os.listdir(data_dir)
-file_list = random.sample(file_list, 45000)
+file_list = random.sample(file_list, min(len(file_list), 45000))
 
 for i in tqdm(file_list):
     img_name = i
