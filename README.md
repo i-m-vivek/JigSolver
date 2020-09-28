@@ -8,7 +8,6 @@ Archaeologist usually find broken peices of rare historic items after that they 
 ### Training 
 Get the data from [Kaggle](https://www.kaggle.com/c/imet-2020-fgvc7). Put this zip file in data folder, then run the following to setup the data and start training. 
 ```
-mkdir data 
 chmod +x ./data_setup
 ./data_setup
 python train.py
@@ -17,7 +16,6 @@ python train.py
 ### Demo
 If you want to play with the model, you can look at this [notebook](https://github.com/i-m-vivek/JigSolver/blob/master/Pretrained%20Model%20Demo.ipynb). Make sure you download the pretrained model from my [GDrive](https://drive.google.com/file/d/1WUTiIvY0B3CH9GBXIociUa53DdIUiyo9/view?usp=sharing) & follow the next two steps to setup data.
 ```
-mkdir data 
 chmod +x ./data_setup
 ./data_setup
 ```
