@@ -38,7 +38,7 @@ class JigsawDataset(torch_data.Dataset):
         img = Image.fromarray(img)
         d = {"img": img}
         for i in range(self.num_piece):
-            d["perm"+str(i)] = torch.tensor(self.df.iloc[idx, i])
+            d[f"perm{i}"] = self.df.iloc[idx, i+1]
 
         if self.transform is not None:
             d["img"] = self.transform(img)

@@ -87,6 +87,7 @@ def train(num_epochs, model, optimizer, criterion, num_piece = 9):
          for batch_idx, batch_data in enumerate(tqdm(dataloaders[phase])):
             inputs = batch_data["img"].to(device)
             for i in range(num_piece):
+               # print(batch_data[f"perm{i}"])
                batch_data[f"perm{i}"] = batch_data[f"perm{i}"].to(device).long()
 
             model.zero_grad()
@@ -147,7 +148,7 @@ def train(num_epochs, model, optimizer, criterion, num_piece = 9):
    print('Min val Loss: {:4f}'.format(min_loss))                  
 
 
-model = JigSolver()
+model = JigSolver().to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr= 0.0001, ) # add weight decay
 train(15, model, optimizer, criterion, num_piece = 9)

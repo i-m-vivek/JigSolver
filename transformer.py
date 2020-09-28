@@ -1,7 +1,6 @@
-# Credits for this code: https://nlp.seas.harvard.edu/2018/04/03/attention.html
 import torch 
 from torch import nn 
-import torch.functional as F
+import torch.nn.functional as F
 from torch.autograd import Variable
 import copy
 import math

@@ -1,0 +1,22 @@
+Experiments which can be done to make this project awesome.
+
+
+- Make a GUI toolkit that solves a image jigsaw 
+	- Upload an image
+	- make a jigsaw 
+	- Return the results
+- testing for image classification without any finetuning
+	- number of finetune steps vs permorfance
+- plotting training curves
+- providing a pretrained model
+	- on various dataset 
+- comparision with baseline model
+- 2*2 -> 3*3 -> 4*4 -> 5*5 
+- changing the value of N for transformer (optional)
+- making an illustration to explain how things are done
+- analying the positive and negative cases
+- do some analysis which are the position it is getting wrong most of the time.
+- bring up your ideas list
+	- Weighted loss function
+
+
