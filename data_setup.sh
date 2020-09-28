@@ -1,3 +1,5 @@
+mkdir data 
+mv imet-2020-fgvc7.zip data
 cd ./data
 mkdir generated_data
 unzip -q imet-2020-fgvc7.zip
