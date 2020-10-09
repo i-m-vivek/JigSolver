@@ -1,5 +1,4 @@
 # JigSolver - A Transformer based Image Jigsaw Solver
-![sample](jigsaw_sample.png "Sample of Model Predictions")
 
 
 ## About
